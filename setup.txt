@@ -1,0 +1,29 @@
+1. Install Java
+	Configure JAVA_HOME, JRE_HOME
+2. Install Android Studio
+	Configure ANDROID_HOME
+	export ANDROID_HOME=$HOME/Android/Sdk
+	export PATH=$PATH:$ANDROID_HOME/emulator
+	export PATH=$PATH:$ANDROID_HOME/tools
+	export PATH=$PATH:$ANDROID_HOME/tools/bin
+	export PATH=$PATH:$ANDROID_HOME/platform-tools
+3. Install react-native, node, npm
+
+
+4. Creating a new application
+	npx react-native init AwesomeProject
+5. Preparing the Android device
+	Turn on USB Debugging and connect ur device via USB
+6. Running your React Native application
+	cd AwesomeProject
+	npx react-native start
+   react-native start starts Metro Bundler.
+	
+   Run react-native run-android inside your React Native project folder:
+
+	npx react-native run-android
+   If everything is set up correctly, you should see your new app running in your Android emulator shortly.
+
+   npx react-native run-android is one way to run your app - you can also run it directly from within Android Studio.
+
+
