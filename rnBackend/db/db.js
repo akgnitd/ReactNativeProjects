@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongoDbUrl = "mongodb+srv://react1:admin@react1-4snfw.mongodb.net/test?retryWrites=true&w=majority";
+const mongoDbUrl = "mongodb+srv://react1:admin@react1-4snfw.mongodb.net/authDB?retryWrites=true&w=majority";
 
 mongoose.connect(mongoDbUrl, {useNewUrlParser: true, useUnifiedTopology: true});
 
