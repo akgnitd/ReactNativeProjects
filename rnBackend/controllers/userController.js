@@ -8,7 +8,8 @@ router.post("/create", (req, res) => {
 	console.log(req.body);
 	const user = new User({
 		email: req.body.email,
-		password: req.body.password
+		password: req.body.password,
+		name: req.body.name
 	})
 	user.save().then((user) => {
 		if (user) {
@@ -16,6 +17,8 @@ router.post("/create", (req, res) => {
 		} else {
 			res.sendStatus(400)
 		}
+	}).catch((error) => {
+		res.send(error);
 	})
 });
 
