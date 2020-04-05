@@ -1,0 +1,3 @@
+installing library to connect to mongoDB. install inside project directory
+
+chiki@androZDi:~/Documents/ReactNative/ReactNativeProjects/rnBackend$ npm i --save mongoose
